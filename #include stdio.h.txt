@@ -1,0 +1,13 @@
+#include <stdio.h>
+void outerFunction() {
+    printf("This is the outer function.\n");
+    void innerFunction() {
+        printf("This is the inner function.\n");
+    }
+    innerFunction();
+}
+int main() {
+    printf("Calling the outer function...\n");
+    outerFunction();
+    return 0;
+}
